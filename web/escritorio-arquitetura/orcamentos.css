@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Dosis, sans-serif;
+}
+
+
+header {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 40px 24px 80px;
+    top: 0;
+    width: 100%;
+    font-weight: 150;
+    font-size: 20px;
+}
+
+body main {
+    background-color: #f6f6f6;
+}
+
+#logo {
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+header nav a {
+    color: #000000;
+    padding: 32px;
+    text-decoration: none;
+}
+
+header nav a::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    margin-right: 7px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+  
+
+header nav a:hover::before {
+    opacity: 1;
+}
+
+main .titulo-orcamento {
+    padding-left: 50px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    font-size: 30px;
+}
+
+main .opcoes {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    gap: 10px;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+main .orcamento {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main .input {
+    height: 25px;
+}
+
+main .mensagem {
+    height: 100px;
+}
+
+main button {
+    height: 40px;
+    font-size: 100%;
+}
+
+main select {
+    height: 25px
+}
+
+main section {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    background-color: #f6f6f6;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+footer {
+    width: 100%;
+    padding: 38px 0;
+    text-decoration: none;
+}
+
+.div-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.div-left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.div-left div {
+    display: flex;
+    flex-direction: column;
+}
+
+.div-right {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+.div-right a {
+    font-size: 14px;
+    display: block;
+    line-height: 21px;
+}
+
+.div-right .contato {
+    display: flex;
+    flex-direction: column;
+}
+
+.div-right .midias {
+    display: flex;
+    gap: 10px;
+}
+
+.div-right .midias i {
+    font-size: 25px;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
